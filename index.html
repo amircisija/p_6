@@ -1,68 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
-    <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
-    <meta name="author" content="Henrik H. Boelsmand">
-    <title>Bootstrap 4 boilerplate</title>
-    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- build:css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- endbuild -->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Amir Cisija 2018 | amircisija.com">
+  <title>Bootstrap boilerplate</title>
+  <link rel="shortcut icon" href="favicon.ico">
 
-  <body>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-           <a class="navbar-brand" href=".">Navbar</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+  <!-- build:css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- endbuild -->
+</head>
 
-           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link disabled" href="#">Disabled</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-               </li>
-             </ul>
-             <form class="form-inline my-2 my-lg-0">
-               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-             </form>
-           </div>
-        </nav>
+<body>
 
-         <div class="container">
+  <header>
+    <div class="top__bar py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus, consequatmpore!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-transparent">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-           <div style="padding-top:120px; text-align:center;">
-                <h1>Hello world!</h1>
-                <p class="lead">Remove this content or build upon it.<br>
-                For documentation and examples: <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a><br>
-                Here is a <a href="newpage.html">link to another page</a></p>
-           </div>
+    <div id="slider" class="jarallax hero__is--full--height" data-speed="0.5" data-jarallax>
+      <div class="slider__inner--contetn h-100">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+            <div class="col-md-6 justify-content-center">
+              <p class="slider__title--1">Lorem ipsum dolom</p>
+              <p class="slider__title--2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+                praesentium officia facilis perferendis velit vel alias saepe inventore magni suscipit voluptas vero a,
+                cum debitis! Veniam libero magnam labore est?</p>
+            </div>
+            <div class="col-md-6">
+              <div class="img__holder">
+                <img src="assets/img/phone1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shape__wrapper">
+          <img src="assets/img/shape__3.png" alt="">
+        </div>
+      </div>
+      <img class="jarallax-img" src="assets/img/hero__image.jpg" alt="" />
+    </div>
 
-         </div>
+  </header>
 
-    <!-- build:js -->
-    <script src="assets/js/main.js"></script>
-     <!-- endbuild -->
-  </body>
+  <main role="main" class="container">
+    <div class="jumbotron">
+      <h1>Navbar example</h1>
+      <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it
+        will remain fixed to the top of your browser's viewport.</p>
+      <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+    </div>
+
+    <section class="section__1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias quaerat? Ratione, hic eius
+              doloremque fuga sunt totam quos ipsam maxime, neque odit perspiciatis quis repellat eveniet itaque
+              repudiandae quia!</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias quaerat? Ratione, hic eius
+              doloremque fuga sunt totam quos ipsam maxime, neque odit perspiciatis quis repellat eveniet itaque
+              repudiandae quia!</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias quaerat? Ratione, hic eius
+              doloremque fuga sunt totam quos ipsam maxime, neque odit perspiciatis quis repellat eveniet itaque
+              repudiandae quia!</h1>
+          </div>
+        </div>
+      </div>
+    </section <section class="section__1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, molestias quaerat? Ratione, hic eius
+            doloremque fuga sunt totam quos ipsam maxime, neque odit perspiciatis quis repellat eveniet itaque
+            repudiandae quia!</h1>
+        </div>
+      </div>
+    </div>
+    </section>>
+
+  </main>
+
+  <!-- build:js -->
+  <script src="assets/js/main.js"></script>
+  <!-- endbuild -->
+  <script defer async src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
+  <script defer async src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
+  <script>
+
+  </script>
+</body>
 
 </html>
